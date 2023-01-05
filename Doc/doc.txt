@@ -1,0 +1,2 @@
+please refer
+ to https://www.nxp.com/design/software/embedded-software/essential-audio-processing-library:ESSENTIAL-AUDIO-PROCESS-LIBRARY#:~:text=NXP's%20Essential%20Audio%20Processing%20(EAP,a%20high%20quality%20listening%20experience.

@@ -1,0 +1,4 @@
+NXP’s Essential Audio Processing (EAP) library is a bundle of audio processing blocks for enhancing the tonal and spatial perception of sound in audio applications. It includes a range of sound processing algorithms that can be tuned to your application to create a high quality listening experience. The EAP library is complimentary to use with supported NXP devices, and is available in the MCUXpresso SDK in the form of precompiled libraries.
+
+
+for more informations, please see https://www.nxp.com/design/software/embedded-software/essential-audio-processing-library:ESSENTIAL-AUDIO-PROCESS-LIBRARY
