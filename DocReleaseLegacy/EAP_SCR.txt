@@ -1,0 +1,10 @@
+ EAP package:
+        version: EAP32_1.0.4_FP1
+        Location: middleware/EAP
+        Description: essential audio processing library for platform RT600(rel EAP32_1.0.4) + MIMXRT1050xxxxA(rel EAP32_1.0.1) + MIMXRT1062xxxxA(rel EAP32_1.0.1) + MIMXRT1170xxxxA(rel EAP32_1.0.1) 
+        License: LA_OPT_NXP_Software_License v34 February 2022 - Additional distribution license granted, Section 2.3 applies
+        Author: NXP - VATEC
+        name: EAP
+        Format: Precompiled libraries, header files, EAP integration file example, EAP configuration example
+        URL: https://www.nxp.com/design/software/embedded-software/essential-audio-processing-library:ESSENTIAL-AUDIO-PROCESS-LIBRARY   
+
