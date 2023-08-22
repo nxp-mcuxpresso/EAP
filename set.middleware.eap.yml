@@ -115,29 +115,7 @@ set.middleware.eap:
     anyOf:
     - allOf:
       - board:
-        - evkmimxrt685
-        - mimxrt685audevk
-        - evkmimxrt595
-      - set.middleware.dsp_audio_streamer
-    - allOf:
-      - board:
-        - evkmimxrt1040
-        - evkbimxrt1050
-        - evkmimxrt1060
-        - evkbmimxrt1060
-        - evkmimxrt1064
-        - lpcxpresso55s69
-        - evkmimxrt1160
-        - evkmimxrt1170
-        - evkbmimxrt1170
-      - set.middleware.maestro_framework
-    - allOf:
-      - board:
-        - mimxrt685audevk
-      - set.middleware.dsp_audio_streamer
-    - allOf:
-      - board:
-        - evkbmimxrt1060
+        - evkcmimxrt1060
       - set.middleware.maestro_framework
 scr.middleware.eap:
   belong_to: set.middleware.eap
@@ -163,94 +141,94 @@ middleware.eap:
     cc-include:
     - repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       project_relative_path: Example_Application/CONFIG_HEADER
     - repo_relative_path: EAP_Includes
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
     files:
     - source: middleware/EAP/EAP_Includes/LVC_Types.h
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: EAP_Includes
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_AllEffectOff.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_AutoVolumeLeveler.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_ConcertSound.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_Crossover2waySpeakers.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_CrossoverForSubwoofer.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_Custom.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_LoudnessMaximiser.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_MusicEnhancerRMSLimiter.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_MusicEnhancerRMSLimiter_lowMIPS.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_TestAllOn.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_ToneGenerator.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_VoiceEnhancer.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
     - source: middleware/EAP/Example_Application/CONFIG_HEADER/EAP_Parameter_VoiceEnhancer_lowMIPS.h
       package_relative_path: Example_Application/CONFIG_HEADER
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: Example_Application/CONFIG_HEADER/CONFIG_FOR_SDK
       project_relative_path: Example_Application/CONFIG_HEADER
       type: c_include
@@ -312,12 +290,12 @@ middleware.eap16.header:
     project_base_path: EAP
     cc-include:
     - repo_relative_path: EAP_Includes
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
     files:
     - source: middleware/EAP/EAP_Includes/EAP16.h
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: EAP_Includes
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
@@ -360,12 +338,12 @@ middleware.eap32.header:
     project_base_path: EAP
     cc-include:
     - repo_relative_path: EAP_Includes
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
     files:
     - source: middleware/EAP/EAP_Includes/EAP32.h
-      toolchains: armgcc mcux xcc
+      toolchains: armgcc mcux
       repo_relative_path: EAP_Includes
       project_relative_path: EAP_Includes
       package_relative_path: EAP_Includes
@@ -393,121 +371,6 @@ middleware.eap32.header:
     - middleware.eap
   meta-name: middleware.eap32.header
   cmake_module_name: middleware_eap32_header
-middleware.eap.fusionf1.lib:
-  section-type: component
-  contents:
-    repo_base_path: middleware/EAP
-    project_base_path: EAP
-    files:
-    - source: middleware/EAP/EAP_Library/libEAP16_3_0_13_FP1_RT500.a
-      toolchains: xcc
-      attribute: extra-libraries
-      repo_relative_path: EAP_Library
-      project_relative_path: EAP_Library
-      package_relative_path: EAP_Library
-      type: lib
-    - source: middleware/EAP/middleware_eap_fusionf1_lib.cmake
-      type: workspace
-      toolchains: armgcc
-      hidden: true
-    package_base_path: middleware/EAP
-  belong_to: set.middleware.eap
-  section_info:
-    description: Essential Audio Processing library for RT500
-    version: 3.0.13
-    type: middleware
-    user_visible: never
-    full_name: EAP lib for RT500
-    taxonomy:
-      csub: lib
-      cclass: Audio
-      cgroup: Audio Processing
-    display_name: eap_fusionf1_lib
-    vendor: NXP
-  dependency:
-    allOf:
-    - board:
-      - evkmimxrt595
-    - middleware.eap16.header
-  meta-name: middleware.eap.fusionf1.lib
-  cmake_module_name: middleware_eap_fusionf1_lib
-middleware.eap.hifi4.lib:
-  section-type: component
-  contents:
-    repo_base_path: middleware/EAP
-    project_base_path: EAP
-    files:
-    - source: middleware/EAP/EAP_Library/libEAP16_3_0_13_FP1_RT600.a
-      toolchains: xcc
-      attribute: extra-libraries
-      repo_relative_path: EAP_Library
-      project_relative_path: EAP_Library
-      package_relative_path: EAP_Library
-      type: lib
-    - source: middleware/EAP/middleware_eap_hifi4_lib.cmake
-      type: workspace
-      toolchains: armgcc
-      hidden: true
-    package_base_path: middleware/EAP
-  belong_to: set.middleware.eap
-  section_info:
-    description: Essential Audio Processing library for RT600
-    version: 3.0.13
-    type: middleware
-    user_visible: never
-    full_name: EAP lib for RT600
-    taxonomy:
-      csub: lib
-      cclass: Audio
-      cgroup: Audio Processing
-    display_name: eap_hifi4_lib
-    vendor: NXP
-  dependency:
-    allOf:
-    - board:
-      - evkmimxrt685
-      - mimxrt685audevk
-    - middleware.eap16.header
-  meta-name: middleware.eap.hifi4.lib
-  cmake_module_name: middleware_eap_hifi4_lib
-middleware.eap32.hifi4.lib:
-  section-type: component
-  contents:
-    repo_base_path: middleware/EAP
-    project_base_path: EAP
-    files:
-    - source: middleware/EAP/EAP_Library/libEAP32_1_0_4_FP1_RT600.a
-      toolchains: xcc
-      attribute: extra-libraries
-      repo_relative_path: EAP_Library
-      project_relative_path: EAP_Library
-      package_relative_path: EAP_Library
-      type: lib
-    - source: middleware/EAP/middleware_eap32_hifi4_lib.cmake
-      type: workspace
-      toolchains: armgcc
-      hidden: true
-    package_base_path: middleware/EAP
-  belong_to: set.middleware.eap
-  section_info:
-    description: Essential Audio Processing library for RT600
-    version: 1.0.4
-    type: middleware
-    user_visible: never
-    full_name: EAP lib for RT600
-    taxonomy:
-      csub: lib
-      cclass: Audio
-      cgroup: Audio Processing
-    display_name: eap_hifi4_lib
-    vendor: NXP
-  dependency:
-    allOf:
-    - board:
-      - mimxrt685audevk
-    - middleware.eap32.header
-  meta-name: middleware.eap32.hifi4.lib
-  cmake_module_name: middleware_eap32_hifi4_lib
 middleware.eap.arm.lib:
   section-type: component
   contents:
@@ -518,14 +381,6 @@ middleware.eap.arm.lib:
       toolchains: armgcc mcux
       attribute: extra-libraries
       cores: cm7f
-      repo_relative_path: EAP_Library
-      project_relative_path: EAP_Library
-      package_relative_path: EAP_Library
-      type: lib
-    - source: middleware/EAP/EAP_Library/libEAP16_3_0_12_FP2_CM33.a
-      toolchains: armgcc mcux
-      attribute: extra-libraries
-      cores: cm33
       repo_relative_path: EAP_Library
       project_relative_path: EAP_Library
       package_relative_path: EAP_Library
@@ -551,15 +406,7 @@ middleware.eap.arm.lib:
   dependency:
     allOf:
     - board:
-      - evkmimxrt1040
-      - evkbimxrt1050
-      - evkmimxrt1060
-      - evkbmimxrt1060
-      - evkmimxrt1064
-      - lpcxpresso55s69
-      - evkmimxrt1160
-      - evkmimxrt1170
-      - evkbmimxrt1170
+      - evkcmimxrt1060
     - middleware.eap16.header
   meta-name: middleware.eap.arm.lib
   cmake_module_name: middleware_eap_arm_lib
@@ -598,7 +445,7 @@ middleware.eap32.arm.lib:
   dependency:
     allOf:
     - board:
-      - evkbmimxrt1060
+      - evkcmimxrt1060
     - middleware.eap32.header
   meta-name: middleware.eap32.arm.lib
   cmake_module_name: middleware_eap32_arm_lib

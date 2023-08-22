@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" name="Essential Audio Processing Library" brief="Essential Audio Processing Library (EAP) provides audio processing blocks for enhancing the tonal and spatial perception of sound in audio applications" format_version="3.13" api_version="2.0.0" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.13.xsd">
+<ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_12" name="Essential Audio Processing Library" brief="Essential Audio Processing Library (EAP) provides audio processing blocks for enhancing the tonal and spatial perception of sound in audio applications" format_version="3.12" api_version="2.0.0" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.12.xsd">
 
   <externalDefinitions>
     <definition extID="MIMXRT1062xxxxA"/>
@@ -9,7 +9,7 @@
     <definition extID="core0_MIMXRT1062xxxxA"/>
     <definition extID="core0_MIMXRT1062xxxxB"/>
   </externalDefinitions>
-  <ksdk id="MCUXpressoSDK2141_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" name="MCUXpressoSDK2141_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" version="2.14.1" revision="Provided by Script"/>
+  <ksdk id="MCUXpressoSDK2141_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_12" name="MCUXpressoSDK2141_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_12" version="2.14.1" revision="Provided by Script"/>
   <components>
     <component id="middleware.eap.template.MIMXRT1062" name="eap_template" brief="eap template" version="3.0.13" full_name="eap template configuration" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="true" type="project_template" package_base_path="../middleware/EAP" project_base_path="middleware/EAP">
       <source toolchain="armgcc" relative_path="./" type="workspace">
