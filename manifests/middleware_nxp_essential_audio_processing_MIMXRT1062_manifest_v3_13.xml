@@ -9,23 +9,23 @@
     <definition extID="core0_MIMXRT1062xxxxA"/>
     <definition extID="core0_MIMXRT1062xxxxB"/>
   </externalDefinitions>
-  <ksdk id="MCUXpressoSDK2140_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" name="MCUXpressoSDK2140_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" version="2.14.0"/>
+  <ksdk id="MCUXpressoSDK2140_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" name="MCUXpressoSDK2140_middleware_nxp_essential_audio_processing_MIMXRT1062_manifest_v3_13" version="2.14.0" revision="2.14.0"/>
   <components>
-    <component id="middleware.eap.template.MIMXRT1062" name="eap_template" brief="eap template" version="3.0.13" full_name="eap template configuration" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="true" type="project_template" package_base_path="../middleware/EAP" project_base_path="middleware/EAP">
+    <component id="middleware.eap.template.MIMXRT1062" name="eap_template" brief="eap template" version="3.0.13" full_name="eap template configuration" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="true" type="project_template" package_base_path=".././" project_base_path="middleware/EAP">
       <source toolchain="armgcc" relative_path="./" type="workspace">
         <files mask="middleware_eap_template.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" type="c_include"/>
-        <include_path relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" type="c_include"/>
+        <include_path relative_path="./Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" type="c_include"/>
+        <include_path relative_path="./EAP_Includes" project_relative_path="EAP_Includes" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.eap.exapp.MIMXRT1062" name="eap" brief="EAP example app" version="3.0.12" full_name="EAP example app" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
-      <source relative_path="../../Doc" project_relative_path="Doc" type="doc">
+    <component id="middleware.eap.exapp.MIMXRT1062" name="eap" brief="EAP example app" version="3.0.12" full_name="EAP example app" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path=".././" project_base_path="EAP">
+      <source relative_path="./Doc" project_relative_path="Doc" type="doc">
         <files mask="EAP_SDK_ApplicationNote.pdf"/>
         <files mask="EAP_UserGuide.pdf"/>
       </source>
-      <source exclude="true" relative_path="../../Example_Application" project_relative_path="Example_Application" type="src">
+      <source exclude="true" relative_path="./Example_Application" project_relative_path="Example_Application" type="src">
         <files mask="EAP_ExApp.c"/>
         <files mask="EAP32_ExApp.c"/>
       </source>
@@ -33,7 +33,7 @@
         <files mask="middleware_eap_exapp.cmake" hidden="true"/>
       </source>
     </component>
-    <component id="middleware.eap.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="3.0.12" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="true" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
+    <component id="middleware.eap.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="3.0.12" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="true" type="middleware" package_base_path=".././" project_base_path="EAP">
       <defines>
         <define name="ALGORITHM_VC" value="1"/>
         <define name="ALGORITHM_DBE" value="1"/>
@@ -50,10 +50,10 @@
       <dependencies>
         <component_dependency value="middleware.eap.exapp.MIMXRT1062"/>
       </dependencies>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
+      <source toolchain="armgcc mcuxpresso" relative_path="./EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
         <files mask="LVC_Types.h"/>
       </source>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" type="c_include">
+      <source toolchain="armgcc mcuxpresso" relative_path="./Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" type="c_include">
         <files mask="EAP_Parameter_AllEffectOff.h"/>
         <files mask="EAP_Parameter_AutoVolumeLeveler.h"/>
         <files mask="EAP_Parameter_ConcertSound.h"/>
@@ -72,57 +72,57 @@
         <files mask="middleware_eap.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" toolchain="armgcc mcuxpresso" type="c_include"/>
-        <include_path relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
+        <include_path relative_path="./Example_Application/CONFIG_HEADER" project_relative_path="Example_Application/CONFIG_HEADER" toolchain="armgcc mcuxpresso" type="c_include"/>
+        <include_path relative_path="./EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.eap16.header.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="3.0" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
+    <component id="middleware.eap16.header.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="3.0" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path=".././" project_base_path="EAP">
       <defines>
         <define name="EAP_PROC" value=""/>
       </defines>
       <dependencies>
         <component_dependency value="middleware.eap.MIMXRT1062"/>
       </dependencies>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
+      <source toolchain="armgcc mcuxpresso" relative_path="./EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
         <files mask="EAP16.h"/>
       </source>
       <source toolchain="armgcc" relative_path="./" type="workspace">
         <files mask="middleware_eap16_header.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
+        <include_path relative_path="./EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.eap32.header.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="1.0" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
+    <component id="middleware.eap32.header.MIMXRT1062" name="eap" brief="Essential Audio Processing library" version="1.0" full_name="middleware eap" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path=".././" project_base_path="EAP">
       <dependencies>
         <component_dependency value="middleware.eap.MIMXRT1062"/>
       </dependencies>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
+      <source toolchain="armgcc mcuxpresso" relative_path="./EAP_Includes" project_relative_path="EAP_Includes" type="c_include">
         <files mask="EAP32.h"/>
       </source>
       <source toolchain="armgcc" relative_path="./" type="workspace">
         <files mask="middleware_eap32_header.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
+        <include_path relative_path="./EAP_Includes" project_relative_path="EAP_Includes" toolchain="armgcc mcuxpresso" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.eap.arm.lib.MIMXRT1062" name="eap_arm_lib" brief="Essential Audio Processing library for ARM" version="3.0.12" full_name="EAP lib for ARM" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
+    <component id="middleware.eap.arm.lib.MIMXRT1062" name="eap_arm_lib" brief="Essential Audio Processing library for ARM" version="3.0.12" full_name="EAP lib for ARM" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path=".././" project_base_path="EAP">
       <dependencies>
         <component_dependency value="middleware.eap16.header.MIMXRT1062"/>
       </dependencies>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../EAP_Library" project_relative_path="EAP_Library" type="lib" device_cores="core0_MIMXRT1062xxxxA core0_MIMXRT1062xxxxB">
+      <source toolchain="armgcc mcuxpresso" relative_path="./EAP_Library" project_relative_path="EAP_Library" type="lib" device_cores="core0_MIMXRT1062xxxxA core0_MIMXRT1062xxxxB">
         <files mask="libEAP16_3_0_12_FP1_CM7.a"/>
       </source>
       <source toolchain="armgcc" relative_path="./" type="workspace">
         <files mask="middleware_eap_arm_lib.cmake" hidden="true"/>
       </source>
     </component>
-    <component id="middleware.eap32.arm.lib.MIMXRT1062" name="eap_arm_lib" brief="Essential Audio Processing library for ARM" version="1.0.2" full_name="EAP lib for ARM" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path="../middleware/EAP" project_base_path="EAP">
+    <component id="middleware.eap32.arm.lib.MIMXRT1062" name="eap_arm_lib" brief="Essential Audio Processing library for ARM" version="1.0.2" full_name="EAP lib for ARM" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Audio Processing" user_visible="false" type="middleware" package_base_path=".././" project_base_path="EAP">
       <dependencies>
         <component_dependency value="middleware.eap32.header.MIMXRT1062"/>
       </dependencies>
-      <source toolchain="armgcc mcuxpresso" relative_path="../../EAP_Library" project_relative_path="EAP_Library" type="lib" device_cores="core0_MIMXRT1062xxxxA core0_MIMXRT1062xxxxB">
+      <source toolchain="armgcc mcuxpresso" relative_path="./EAP_Library" project_relative_path="EAP_Library" type="lib" device_cores="core0_MIMXRT1062xxxxA core0_MIMXRT1062xxxxB">
         <files mask="libEAP32_1_0_2_FP1_CM7.a"/>
       </source>
       <source toolchain="armgcc" relative_path="./" type="workspace">
